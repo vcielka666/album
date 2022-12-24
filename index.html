@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="album.css"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Album de la familia Marko</title>
+   
+</head>
+<body >
+
+   
+         
+            <div class="cover">
+                
+                
+                    
+              <!-- Add a div element to hold the image -->
+<div id="image-container" class="cinema"></div>
+
+
+
+
+<script>
+  // Create a list of the image file names
+  const path = 'pictures/spolocny/';
+  const images = [
+    path + 'foto1.jpg',
+    path + 'foto2.jpg',
+    path + 'foto3.jpg',
+    path + 'foto4.jpg',
+    path + 'foto5.jpg',
+    path + 'foto6.jpg',
+    path + 'foto7.jpg',
+    path + 'foto8.jpg',
+    path + 'foto9.jpg ',
+    path + 'foto10.jpg',
+    path + 'foto11.jpg',
+    path + 'foto12.jpg',
+    path + 'foto13.jpg ',
+    path + 'foto14.jpg',
+    path + 'foto15.jpg',
+  ];
+
+  // Create a function to display a random image
+  function displayRandomImage() {
+    // Generate a random number between 0 and the number of images
+    const randomIndex = Math.floor(Math.random() * images.length);
+
+    // Select the image at the random index
+    const selectedImage = images[randomIndex];
+
+    // Set the background image of the div element
+    const divElement = document.getElementById('image-container');
+    if (divElement) {
+      divElement.style.backgroundImage = `url(${selectedImage})`;
+    }
+  }
+  
+  const path2 = 'pictures/matteo/';
+  const images2 = [
+    path2 + 'matteo1.JPG',
+    path2 + 'matteo2.JPG',
+    path2 + 'matteo3.JPG',
+    path2 + 'matteo4.JPG',
+    path2 + 'matteo5.JPG',
+    path2 + 'matteo6.JPG',
+    path2 + 'matteo7.JPG',
+    path2 + 'matteo8.JPG',
+    path2 + 'matteo9.JPG',
+    path2 + 'matteo10.JPG',
+    path2 + 'matteo11.JPG',
+    path2 + 'matteo13.JPG',
+    ];
+
+  function displayRandomImage2() {
+    // Generate a random number between 0 and the number of images
+    const randomIndex = Math.floor(Math.random() * images2.length);
+
+    // Select the image at the random index
+    const selectedImage = images2[randomIndex];
+
+    // Set the background image of the div element
+    const divElement = document.getElementById('image-container');
+    if (divElement) {
+      divElement.style.backgroundImage = `url(${selectedImage})`;
+    }
+  }
+ 
+</script>
+
+
+
+    
+                </div>
+            </div>
+            <div class="spolocnybox">
+                <button id="nuff" class="nuffbutton" type="button" 
+                onclick="displayRandomImage()">Spoločné</button>
+            </div>
+        
+
+            <div class="matteobox">
+                <button class="oinkbutton" type="button" onclick="displayRandomImage2()">Matteo</button>
+            </div>
+
+            <p >Štastné a Veselé Vianoce! 2022</p>
+</body>
+
+</html>

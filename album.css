@@ -1,0 +1,290 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+
+
+p {
+    color: rgba(245, 211, 20, 0.911);
+    font-size: 24px;
+    position: absolute;
+    text-align: center;
+    font-weight: bolder;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2%;
+}
+
+
+/* BACKGROUND PICTURES FORMATING */
+
+
+.cover {
+    
+    background-color:white;
+    
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+  
+
+.spolocnybox  {
+    background-color:teal;
+    background-image: url('pictures/spolocny.jpg');
+    background-size: 360px;
+    position: relative;
+    float: left;
+    background-repeat:no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100vh;
+
+  
+}
+
+.matteobox {
+    
+    background-image: url('pictures/matteo/matteo12.JPG');
+    background-size: 250px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    float: right;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 30%;
+    height: 100vh;
+
+   
+
+    
+}
+
+
+
+
+
+.nuffbutton, .oinkbutton {
+font-size: xx-large;
+margin: 0 auto;
+display: block;
+top:50%;
+position: inherit;
+block-size: 80px;
+width:100%;
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+
+.cinema {
+  background-image: url('pictures/cover.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 50%;
+  height: 75%;
+}
+
+
+@media (max-width: 586px) {
+  .nuffbutton, .oinkbutton {
+    width: 85px;
+    font-size:x-large;
+  }
+}
+
+@media (max-width: 376px) {
+  .matteobox , .spolocnybox {
+  background-repeat: inherit;
+  background-size: contain;
+  
+   
+
+    
+  }
+}
